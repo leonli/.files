@@ -18,3 +18,6 @@ By using this `.vimrc` file, you'd install a few external tools:
 
 4). Run command for go-vim plugin => `:GoInstallBinaries`
 
+### Preview
+
+![preview](https://raw.githubusercontent.com/leonli/.files/master/preview.png)

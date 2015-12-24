@@ -9,6 +9,7 @@ returned.
 
 ### Usage
 By using this `.vimrc` file, you'd install a few external tools:
+
 1). Tools for Gotag => `go get -u github.com/jstemmer/gotags`
 
 2). Install CTags => `brew install ctags`

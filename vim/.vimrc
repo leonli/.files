@@ -71,6 +71,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
+" NERDTree settings 
+let NERDTreeShowLineNumbers = 1
+
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_auto_close_preview = 1

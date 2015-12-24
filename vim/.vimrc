@@ -84,6 +84,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " Tagbar settings
 let g:tagbar_autoclose = 0
+let g:tagbar_show_linenumbers = -1 
 
 " Tagbar config for gotag 
 let g:tagbar_type_go = {  

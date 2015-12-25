@@ -34,6 +34,8 @@
 " 2). Install CTags => `brew install ctags`
 " 3). Run vim command => `:PlugIntall`
 " 4). Run command for go-vim plugin => `:GoInstallBinaries`
+" 5). Install & commpile the command-t plugin, run `:he command-t-compile` for
+" more detail for compling command-t plugin
 "
 " Then you should good to go. Have Fun! ;)
 " For more detail, please read the source of this .vimrc file, as it
@@ -69,6 +71,7 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
+Plug 'wincent/Command-T'
 call plug#end()
 
 " NERDTree settings 
@@ -120,10 +123,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Config vim-go
 " ##########################################################
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>gr <Plug>(go-run)
+au FileType go nmap <leader>gb <Plug>(go-build)
+au FileType go nmap <leader>gt <Plug>(go-test)
+au FileType go nmap <leader>gc <Plug>(go-coverage)
 
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)

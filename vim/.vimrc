@@ -45,6 +45,8 @@
 set nu
 set ruler 
 set title
+set sb " splitbelow
+set spr " splitright
 " For programmer
 filetype indent on
 set expandtab

@@ -49,6 +49,7 @@ set sb " splitbelow
 set spr " splitright
 set mouse=a
 set cursorline
+set scrolloff=3
 " Setup the cursor shape on different mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
@@ -59,6 +60,11 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+" Useful keybinding
+nnoremap <space> zz
+noremap @ "*
+noremap , ^
+noremap . $
 " split naviagation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>

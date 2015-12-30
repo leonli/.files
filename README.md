@@ -8,7 +8,7 @@ version. And running `:echo has('lua')` to verify that if `1` will be
 returned.                                                            
 
 ### Usage
-By using this `.vimrc` file, you'd install a few external tools:
+By using this .vimrc file, you'd install a few external tools:
 
 1). Tools for Gotag => `go get -u github.com/jstemmer/gotags`
 
@@ -17,6 +17,10 @@ By using this `.vimrc` file, you'd install a few external tools:
 3). Run vim command => `:PlugIntall`
 
 4). Run command for go-vim plugin => `:GoInstallBinaries`
+
+5). Install & commpile the command-t plugin, run `:he command-t-compile` for more detail for compling command-t plugin
+
+6). TernJS installation: see -> `:he tern-install`
 
 ### Preview
 

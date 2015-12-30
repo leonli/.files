@@ -36,6 +36,7 @@
 " 4). Run command for go-vim plugin => `:GoInstallBinaries`
 " 5). Install & commpile the command-t plugin, run `:he command-t-compile` for
 " more detail for compling command-t plugin
+" 6). TernJS installation: see -> `:he tern-install`
 "
 " Then you should good to go. Have Fun! ;)
 " For more detail, please read the source of this .vimrc file, as it
@@ -86,19 +87,31 @@ Plug 'SirVer/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'wincent/Command-T'
+Plug 'ternjs/tern_for_vim'
+Plug 'isRuslan/vim-es6'
+Plug 'mxw/vim-jsx'
 call plug#end()
 
 " NERDTree settings 
 let NERDTreeShowLineNumbers = 1
+
+" Vim JSX settings
+let g:jsx_ext_required = 0
 
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_auto_close_preview = 1
 set completeopt-=preview
 
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
 " Tagbar keybinding
 nmap <F8> :TagbarToggle<CR>
-
+let g:tagbar_autofocus = 1
 " Tagbar settings
 let g:tagbar_autoclose = 0
 let g:tagbar_show_linenumbers = -1 
@@ -134,6 +147,9 @@ let g:tagbar_type_go = {
 
 " Setup the bind key for NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Map binding key for TernJS for def
+map td :TernDef<CR>
 
 " Config vim-go
 " ##########################################################

@@ -64,6 +64,7 @@ set softtabstop=2
 " Useful keybinding
 nnoremap <space> zz
 noremap @ "*
+vnoremap y "*y
 noremap , ^
 noremap . $
 " split naviagation
@@ -90,10 +91,14 @@ Plug 'wincent/Command-T'
 Plug 'ternjs/tern_for_vim'
 Plug 'isRuslan/vim-es6'
 Plug 'mxw/vim-jsx'
+Plug 'vim-scripts/DrawIt'
 call plug#end()
 
 " NERDTree settings 
 let NERDTreeShowLineNumbers = 1
+
+" Command-T setings
+let g:CommandTCancelMap='<Esc>'
 
 " Vim JSX settings
 let g:jsx_ext_required = 0

@@ -172,9 +172,9 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 
 au FileType go nmap <Leader>s <Plug>(go-implements)
 
-" au FileType go nmap <Leader>i <Plug>(go-info)
+au FileType go nmap <Leader>i <Plug>(go-info)
 
-let g:go_auto_type_info = 1
+"let g:go_auto_type_info = 1
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1

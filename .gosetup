@@ -1,0 +1,28 @@
+#! /bin/bash
+# Setup the go envionment for GOPATH
+export GOCODE=$HOME/gocode
+export GOPROJ=$HOME/goprojects
+
+# foreach the go proj envionment directory
+export GOPROJ_DIR=""
+export GOPROJ_DIR_BIN=""
+if [ -d $GOPROJ ];
+then
+  for dir in $(ls $GOPROJ)
+  do
+    if [ -d $GOPROJ/$dir ]; 
+    then
+      export GOPROJ_DIR=$GOPROJ_DIR:$GOPROJ/$dir
+      export GOPROJ_DIR_BIN=$GOPROJ_DIR_BIN:$GOPROJ/$dir/bin
+    fi
+  done
+fi
+
+export GOPATH=$GOCODE$GOPROJ_DIR
+export PATH=$PATH:$GOCODE/bin$GOPROJ_DIR_BIN
+
+# debug info
+#echo -e '\033[32mThe following $GOPATH has been setup for you.\033[0m'
+#echo $GOPATH
+#echo -e '\033[32mThe following $PATH has been setup for you.\033[0m'
+#echo $PATH

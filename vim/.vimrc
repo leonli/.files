@@ -99,6 +99,7 @@ let NERDTreeShowLineNumbers = 1
 
 " Command-T setings
 let g:CommandTCancelMap='<Esc>'
+nnoremap <silent> <leader>b :CommandTMRU<CR>
 
 " Vim JSX settings
 let g:jsx_ext_required = 0

@@ -1,4 +1,4 @@
-" Copyright (c) 2016 Leon Li<lilei.leon@gmail.com>
+" Copyright (c) 2015 Leon Li<lilei.leon@gmail.com>
 "
 " MIT License
 "
@@ -92,6 +92,7 @@ Plug 'ternjs/tern_for_vim'
 Plug 'isRuslan/vim-es6'
 Plug 'mxw/vim-jsx'
 Plug 'vim-scripts/DrawIt'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 " NERDTree settings 
